@@ -53,7 +53,7 @@ variable "max_message_size_in_kilobytes" {
 variable "max_size_in_megabytes" {
   description = "(Optional) Integer value which controls the size of memory allocated for the queue. For supported values see the \"Queue or topic size\" section of [Service Bus Quotas](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quotas). Defaults to `1024`."
   type        = number
-  default     = null
+  default     = 1024
 }
 
 variable "requires_duplicate_detection" {
